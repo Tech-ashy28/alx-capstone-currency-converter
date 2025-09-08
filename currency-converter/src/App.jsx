@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import "./css/home-screen.css"; // one import only
+import "./css/home-screen.css";
 
 function App() {
   return (

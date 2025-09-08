@@ -1,5 +1,5 @@
 
-import "../css/home-screen.css"; // import your CSS so styles apply
+import "../css/home-screen.css"; 
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
           <img
             width="48"
             height="48"
-            src="public/icons/icons8-currency-exchange-100.png"
+            src="/icons/icons8-currency-exchange-100.png" 
             alt="Currency Converter logo"
           />
         </div>

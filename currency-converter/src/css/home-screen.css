@@ -44,7 +44,7 @@ body {
   color: #0c0116;
   font-size: 2rem;
 }
-.header-title:active {
+.header-title:active, .header-title:visited {
   color: #0c0116;
 }
 

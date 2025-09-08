@@ -8,7 +8,6 @@ The app allows users to convert between different currencies using live exchange
 - **Vite** (fast build tool)
 - **JavaScript (ES6+)**
 - **CSS3** (for styling)
-- **Tailwind CSS** (optional, for responsive design)
 - **ExchangeRate API** (for real-time currency data)
 - **Git & GitHub** (for version control)
 
