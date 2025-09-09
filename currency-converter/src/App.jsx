@@ -1,13 +1,23 @@
+
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import "./css/home-screen.css";
+import Converter from "./components/Converter/Converter";
 
 function App() {
+  const [showConverter, setShowConverter] = useState(false);
+
   return (
-    <>
-      <Header />
-      <Main />
-    </>
+    <div>
+      {!showConverter ? (
+        <>
+          <Header />
+          <Main onConvertClick={() => setShowConverter(true)} />
+        </>
+      ) : (
+        <Converter />
+      )}
+    </div>
   );
 }
 

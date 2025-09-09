@@ -1,7 +1,7 @@
-function Main() {
+function Main({ onConvertClick }) {
   return (
     <main>
-      <button><a href="#converter"></a>Let's Convert</button>
+      <button onClick={onConvertClick}>Let's Convert</button>
     </main>
   );
 }

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Base styles */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f4f6;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  color: #007acc;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Headings */
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%; /* full width (instead of 500px fixed) */
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  background: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #005fa3;
+  color: white;
+}
+
+/* Currency row */
+.fieldset-currencies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.currency-group {
+  flex: 1 1 45%; 
+  min-width: 140px; 
+}
+
+.swap-group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-swap {
+  padding: 0.6rem 0.9rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #007acc;
+  border: 1px solid #d1d5db;
+}
+/* Actions row */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background: #007acc;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #333;
+}
+
+/* Result */
+.result-area {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-amount {
+  font-size: 1.4rem;
+  color: #007acc;
+}
+
+.rate-line {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .currency-group {
+    flex: 1 1 100%; 
+  }
+
+  .swap-group {
+    order: 0; 
+    width: 100px;
+    justify-content: center; 
+  }
+}
