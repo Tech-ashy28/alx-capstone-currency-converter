@@ -68,6 +68,7 @@ button:active {
   animation: press-bounce 0.3s;
 }
 
+
 /* Animation for button press bounce effect */
 
 @keyframes press-bounce {
